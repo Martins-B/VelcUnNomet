@@ -20,6 +20,7 @@ public class Objekti : MonoBehaviour
     public AudioClip[] skanaKoAtskanot;
     [HideInInspector]
     public bool vaiIstajaVieta = false;
+    [HideInInspector]
     public GameObject pedejaisVilktais = null;
 
     private void Awake()
