@@ -7,7 +7,6 @@ public class DragDropSkripts : MonoBehaviour, IPointerDownHandler, IBeginDragHan
 {
     // Fields
     public Objekti objektuSkripts;
-    public UzvarasNoteicejs uzvarasNoteicejaSkripts;
     private CanvasGroup kanvasGrupa;
     private RectTransform velkObjRectTransf;
 
@@ -47,7 +46,7 @@ public class DragDropSkripts : MonoBehaviour, IPointerDownHandler, IBeginDragHan
         }
         else
         {
-            uzvarasNoteicejaSkripts.pareiziNomestie();
+            GameObject.Find("PointHandler").GetComponent<WinScript>().AddPoints();
             objektuSkripts.pedejaisVilktais = null;
         }
         objektuSkripts.vaiIstajaVieta = false;
