@@ -51,6 +51,7 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler
                     //pielago nomesta obejkta rotaciju
                     notikums.pointerDrag.GetComponent<RectTransform>().localScale = GetComponent<RectTransform>().localScale;
 
+
                     /*parbauda oec tagiem kurs no objektiem ir pareizi nomests, 
                     tad atskano atbilsotsu skanu*/
                     switch (notikums.pointerDrag.tag)

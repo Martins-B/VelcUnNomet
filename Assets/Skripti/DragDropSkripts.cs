@@ -46,7 +46,6 @@ public class DragDropSkripts : MonoBehaviour, IPointerDownHandler, IBeginDragHan
         }
         else
         {
-            GameObject.Find("PointHandler").GetComponent<WinScript>().AddPoints();
             objektuSkripts.pedejaisVilktais = null;
         }
         objektuSkripts.vaiIstajaVieta = false;
